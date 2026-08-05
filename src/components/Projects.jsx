@@ -15,7 +15,7 @@ const projectsData = [
     technologies: ['AI / OpenAI', 'React', 'Node.js', 'Tailwind CSS', 'PostgreSQL', 'Express'],
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
     github: 'https://github.com/keerthana-1807/placement-ai-pro',
-    demoUrl: 'https://github.com/keerthana-1807/placement-ai-pro',
+    demoUrl: 'https://placement-ai-pro.vercel.app/',
     keyFeatures: [
       'Interactive AI Mock Interviewer offering real-time technical & behavioral feedback',
       'Automated resume improvement & ATS alignment scoring against job descriptions',
@@ -66,8 +66,8 @@ const projectsData = [
       'A high-performance interactive developer portfolio showcasing technical mastery, responsive glassmorphic UI, 3D ambient particle starfields, dynamic typewriter components, and optimized recruiter workflows.',
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
-    github: 'https://github.com/keerthana-1807',
-    demoUrl: '#home',
+    github: 'https://github.com/keerthana-1807/Portfolio-',
+    demoUrl: 'https://github.com/keerthana-1807/Portfolio-',
     keyFeatures: [
       'Interactive 3D Three.js particle starfield and floating geometric wireframe visual effects',
       'Ultra-fluid glassmorphic design system with ambient aurora lighting effects',

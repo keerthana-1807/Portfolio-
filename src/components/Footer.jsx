@@ -58,14 +58,20 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Back to Top Button */}
-          <button
-            onClick={scrollToTop}
-            className="group flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-white/10 hover:border-indigo-500/50 text-xs font-mono text-slate-300 hover:text-white transition-all duration-300 shadow-lg hover:shadow-indigo-500/20"
-          >
-            <span>Back to top</span>
-            <ArrowUp className="w-4 h-4 text-cyan-400 group-hover:-translate-y-1 transition-transform" />
-          </button>
+          {/* Email Link */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="mb-4 text-center">
+              <a href="mailto:keerthananagraj03@email.com" className="text-sm text-cyan-400 hover:underline">keerthananagraj03@email.com</a>
+            </div>
+            {/* Back to Top Button */}
+            <button
+              onClick={scrollToTop}
+              className="group flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-white/10 hover:border-indigo-500/50 text-xs font-mono text-slate-300 hover:text-white transition-all duration-300 shadow-lg hover:shadow-indigo-500/20"
+            >
+              <span>Back to top</span>
+              <ArrowUp className="w-4 h-4 text-cyan-400 group-hover:-translate-y-1 transition-transform" />
+            </button>
+          </div>
         </div>
 
         {/* Copyright & Disclaimer */}

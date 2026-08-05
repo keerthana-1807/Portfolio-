@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Mail, FileText, Sparkles, Terminal, ChevronRight } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './Icons';
+
 import Hero3D from './Hero3D';
 
 export default function Hero({ onOpenResume }) {
@@ -41,12 +41,17 @@ export default function Hero({ onOpenResume }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4.5 py-2 rounded-full bg-indigo-950/40 border border-indigo-500/30 backdrop-blur-md mb-8 shadow-lg shadow-indigo-950/50"
+          className="inline-flex flex-col items-center gap-2 px-4.5 py-2 rounded-full bg-indigo-950/40 border border-indigo-500/30 backdrop-blur-md mb-8 shadow-lg shadow-indigo-950/50"
         >
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-xs font-medium text-indigo-200 tracking-wide">
-            Pursuing B.E. Computer Science & Engineering (AI & ML)
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-xs font-medium text-indigo-200 tracking-wide">
+              Pursuing B.E. Computer Science & Engineering (AI & ML)
+            </span>
+          </div>
+          <div className="mb-1 text-center">
+            <a href="mailto:keerthananagraj03@email.com" className="text-xs text-cyan-400 hover:underline">keerthananagraj03@email.com</a>
+          </div>
         </motion.div>
 
         {/* Profile Avatar with Animated Glowing Rings */}
@@ -104,68 +109,29 @@ export default function Hero({ onOpenResume }) {
           Computer Science Engineer (AI & ML)
         </motion.p>
 
+
         {/* Call to Action Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-wrap items-center justify-center gap-4 mb-8"
+          className="flex flex-col items-center gap-4 mb-8"
         >
-          <a
-            href="#projects"
-            className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            <Sparkles className="w-4 h-4 text-cyan-200" />
-            <span>View Projects</span>
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="#projects"
+              className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 transition-all duration-300 hover:scale-105 active:scale-95"
+            >
+              <Sparkles className="w-4 h-4 text-cyan-200" />
+              <span>View Projects</span>
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
 
-          <button
-            onClick={onOpenResume}
-            className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-white/15 hover:border-indigo-500/50 backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg"
-          >
-            <FileText className="w-4 h-4 text-cyan-400 group-hover:rotate-12 transition-transform" />
-            <span>Download Resume</span>
-          </button>
 
-          <a
-            href="#contact"
-            className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-slate-300 bg-slate-950/60 hover:text-white border border-white/10 hover:border-slate-400/30 backdrop-blur-md transition-all duration-300 hover:scale-105 active:scale-95"
-          >
-            <Mail className="w-4 h-4 text-emerald-400" />
-            <span>Contact Me</span>
-          </a>
+          </div>
         </motion.div>
 
-        {/* Social Links Row */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="flex flex-wrap items-center justify-center gap-3 mb-10"
-        >
-          <a
-            href="https://www.linkedin.com/in/keerthana-n-4621b632b"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn Profile"
-            className="px-5 py-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-white/10 text-slate-300 hover:text-white hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex items-center gap-2 text-xs font-semibold"
-          >
-            <LinkedinIcon className="w-4 h-4 text-blue-400" />
-            <span>LinkedIn Profile</span>
-          </a>
 
-          <a
-            href="https://github.com/keerthana-1807"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub Profile"
-            className="px-5 py-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-white/10 text-slate-300 hover:text-white hover:border-indigo-500/50 transition-all duration-300 shadow-lg flex items-center gap-2 text-xs font-semibold"
-          >
-            <GithubIcon className="w-4 h-4 text-cyan-400" />
-            <span>GitHub Profile</span>
-          </a>
-        </motion.div>
 
         {/* Scroll Down Indicator */}
         <motion.a

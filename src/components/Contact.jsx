@@ -151,7 +151,7 @@ export default function Contact({ onOpenResume }) {
                 </span>
               </div>
               <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors mb-1">
-                Curriculum Vitae / Resume
+                Resume
               </h3>
               <p className="text-xs text-slate-400 font-mono">
                 Download verified resume document
@@ -161,25 +161,6 @@ export default function Contact({ onOpenResume }) {
               Click to preview and download full professional resume.
             </p>
           </motion.div>
-        </div>
-
-        {/* Status Banner */}
-        <div className="glass-panel p-6 rounded-2xl border border-emerald-500/30 bg-emerald-950/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl bg-emerald-500/20 text-emerald-400 shrink-0">
-              <CheckCircle2 className="w-5 h-5" />
-            </div>
-            <div>
-              <h4 className="text-sm font-bold text-white">Open for AI & Engineering Opportunities</h4>
-              <p className="text-xs text-slate-300">Available for recruitment, internships, and full-time software developer roles.</p>
-            </div>
-          </div>
-          <button
-            onClick={onOpenResume}
-            className="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white text-xs font-bold shrink-0 shadow-lg shadow-indigo-600/30 transition-all"
-          >
-            Download Resume
-          </button>
         </div>
       </div>
     </section>
