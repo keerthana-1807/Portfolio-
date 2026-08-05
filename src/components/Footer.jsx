@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 
 export default function Footer() {
@@ -55,15 +55,20 @@ export default function Footer() {
                 <GithubIcon className="w-4 h-4 text-cyan-400" />
                 <span>GitHub</span>
               </a>
+
+              <a
+                href="mailto:keerthananagraj03@email.com"
+                aria-label="Send Email"
+                className="p-2.5 rounded-full bg-slate-900 border border-white/10 text-slate-400 hover:text-white hover:border-emerald-500/40 transition-all flex items-center gap-2 px-4 text-xs font-semibold"
+              >
+                <Mail className="w-4 h-4 text-emerald-400" />
+                <span>Email</span>
+              </a>
             </div>
           </div>
 
-          {/* Email Link */}
+          {/* Back to Top Button */}
           <div className="flex flex-col items-center gap-4">
-            <div className="mb-4 text-center">
-              <a href="mailto:keerthananagraj03@email.com" className="text-sm text-cyan-400 hover:underline">keerthananagraj03@email.com</a>
-            </div>
-            {/* Back to Top Button */}
             <button
               onClick={scrollToTop}
               className="group flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-white/10 hover:border-indigo-500/50 text-xs font-mono text-slate-300 hover:text-white transition-all duration-300 shadow-lg hover:shadow-indigo-500/20"

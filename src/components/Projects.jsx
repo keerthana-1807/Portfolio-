@@ -67,7 +67,7 @@ const projectsData = [
     technologies: ['React', 'Vite', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
     image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80',
     github: 'https://github.com/keerthana-1807/Portfolio-',
-    demoUrl: 'https://github.com/keerthana-1807/Portfolio-',
+    demoUrl: 'https://keerthana-pi.vercel.app/',
     keyFeatures: [
       'Interactive 3D Three.js particle starfield and floating geometric wireframe visual effects',
       'Ultra-fluid glassmorphic design system with ambient aurora lighting effects',

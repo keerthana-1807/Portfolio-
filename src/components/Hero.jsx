@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Mail, FileText, Sparkles, Terminal, ChevronRight } from 'lucide-react';
+import { ArrowDown, FileText, Terminal, ChevronRight } from 'lucide-react';
 
 import Hero3D from './Hero3D';
 
@@ -49,9 +49,6 @@ export default function Hero({ onOpenResume }) {
               Pursuing B.E. Computer Science & Engineering (AI & ML)
             </span>
           </div>
-          <div className="mb-1 text-center">
-            <a href="mailto:keerthananagraj03@email.com" className="text-xs text-cyan-400 hover:underline">keerthananagraj03@email.com</a>
-          </div>
         </motion.div>
 
         {/* Profile Avatar with Animated Glowing Rings */}
@@ -69,7 +66,7 @@ export default function Hero({ onOpenResume }) {
 
           <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden p-1.5 bg-[#0b0f19] border border-white/20 shadow-2xl">
             <img
-              src="/keerthana.png"
+              src="/keerthana.jpg"
               alt="Keerthana N"
               className="w-full h-full object-cover rounded-full filter brightness-105 contrast-105 group-hover:scale-105 transition-transform duration-500"
             />
@@ -118,16 +115,14 @@ export default function Hero({ onOpenResume }) {
           className="flex flex-col items-center gap-4 mb-8"
         >
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#projects"
+            <button
+              onClick={onOpenResume}
               className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-indigo-600 via-indigo-500 to-cyan-500 hover:from-indigo-500 hover:to-cyan-400 shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 transition-all duration-300 hover:scale-105 active:scale-95"
             >
-              <Sparkles className="w-4 h-4 text-cyan-200" />
-              <span>View Projects</span>
+              <FileText className="w-4 h-4 text-cyan-200" />
+              <span>Resume</span>
               <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-
-
+            </button>
           </div>
         </motion.div>
 
