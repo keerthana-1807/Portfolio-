@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, FileText, GraduationCap, Mail } from 'lucide-react';
-import { GithubIcon } from './Icons';
+import { GithubIcon, LinkedinIcon } from './Icons';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -27,7 +27,7 @@ TECHNICAL SKILLS:
 - Databases & Tools: SQL, Git, GitHub, VS Code
 
 FEATURED PROJECTS:
-1. Placement AI Pro (Demo: https://placement-ai-pro.vercel.app/ | Repo: https://github.com/keerthana-1807/placement-ai-pro)
+1. Placement AI Pro (Repo: https://github.com/keerthana-1807/placement-ai-pro)
    - AI-powered placement preparation platform with personalized coding and interview feedback.
 2. KYC AI Agent (Repo: https://github.com/keerthana-1807/kycaiagent)
    - Intelligent KYC automation system verifying user documents using OCR and computer vision.
@@ -120,6 +120,15 @@ CERTIFICATIONS:
                   <GithubIcon className="w-3.5 h-3.5" />
                   <span>github.com/keerthana-1807</span>
                 </a>
+                <a
+                  href="https://www.linkedin.com/in/keerthana-n-4621b632b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-400 flex items-center gap-1.5"
+                >
+                  <LinkedinIcon className="w-3.5 h-3.5 text-blue-400" />
+                  <span>linkedin.com/in/keerthana-n-4621b632b</span>
+                </a>
               </div>
             </div>
 
@@ -183,12 +192,12 @@ CERTIFICATIONS:
                   <div className="flex justify-between font-bold text-white mb-1">
                     <span>Placement AI Pro</span>
                     <a
-                      href="https://placement-ai-pro.vercel.app/"
+                      href="https://github.com/keerthana-1807/placement-ai-pro"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-cyan-400 hover:underline text-[11px]"
                     >
-                      Live Demo ↗
+                      Repo Link ↗
                     </a>
                   </div>
                   <p className="text-slate-300">

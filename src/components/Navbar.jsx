@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { Menu, X, FileText } from 'lucide-react';
+import { LinkedinIcon } from './Icons';
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -64,7 +65,7 @@ export default function Navbar({ onOpenResume }) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Clean Brand Name (Icon Removed) */}
+          {/* Brand Name */}
           <a
             href="#home"
             className="group flex flex-col justify-center focus:outline-none"
@@ -105,6 +106,17 @@ export default function Navbar({ onOpenResume }) {
 
           {/* Right Action Buttons */}
           <div className="hidden sm:flex items-center gap-3">
+            <a
+              href="https://www.linkedin.com/in/keerthana-n-4621b632b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-white/10 text-blue-400 hover:text-white transition-all shadow-md flex items-center gap-2 text-xs font-semibold"
+              title="LinkedIn Profile"
+            >
+              <LinkedinIcon className="w-4 h-4" />
+              <span>LinkedIn</span>
+            </a>
+
             <button
               onClick={onOpenResume}
               className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-white bg-gradient-to-r from-indigo-600 via-cyan-600 to-emerald-600 hover:from-indigo-500 hover:to-emerald-500 backdrop-blur-md transition-all duration-300 shadow-lg shadow-indigo-600/30 hover:scale-105 active:scale-95"
@@ -155,6 +167,16 @@ export default function Navbar({ onOpenResume }) {
               );
             })}
             <div className="pt-3 border-t border-white/10 flex flex-col gap-2">
+              <a
+                href="https://www.linkedin.com/in/keerthana-n-4621b632b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-900 border border-white/10 text-white font-medium"
+              >
+                <LinkedinIcon className="w-4 h-4 text-blue-400" />
+                <span>LinkedIn Profile</span>
+              </a>
+
               <button
                 onClick={() => {
                   setMobileMenuOpen(false);

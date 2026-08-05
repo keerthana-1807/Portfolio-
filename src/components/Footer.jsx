@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
-import { GithubIcon } from './Icons';
+import { GithubIcon, LinkedinIcon } from './Icons';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -35,6 +35,17 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <a
+                href="https://www.linkedin.com/in/keerthana-n-4621b632b"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                className="p-2.5 rounded-full bg-slate-900 border border-white/10 text-slate-400 hover:text-white hover:border-cyan-500/40 transition-all flex items-center gap-2 px-4 text-xs font-semibold"
+              >
+                <LinkedinIcon className="w-4 h-4 text-blue-400" />
+                <span>LinkedIn</span>
+              </a>
+
+              <a
                 href="https://github.com/keerthana-1807"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +53,7 @@ export default function Footer() {
                 className="p-2.5 rounded-full bg-slate-900 border border-white/10 text-slate-400 hover:text-white hover:border-indigo-500/40 transition-all flex items-center gap-2 px-4 text-xs font-semibold"
               >
                 <GithubIcon className="w-4 h-4 text-cyan-400" />
-                <span>GitHub Profile</span>
+                <span>GitHub</span>
               </a>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Mail, FileText, Sparkles, Terminal, ChevronRight } from 'lucide-react';
+import { GithubIcon, LinkedinIcon } from './Icons';
 import Hero3D from './Hero3D';
 
 export default function Hero({ onOpenResume }) {
@@ -108,7 +109,7 @@ export default function Hero({ onOpenResume }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-wrap items-center justify-center gap-4 mb-12"
+          className="flex flex-wrap items-center justify-center gap-4 mb-8"
         >
           <a
             href="#projects"
@@ -136,13 +137,43 @@ export default function Hero({ onOpenResume }) {
           </a>
         </motion.div>
 
+        {/* Social Links Row */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="flex flex-wrap items-center justify-center gap-3 mb-10"
+        >
+          <a
+            href="https://www.linkedin.com/in/keerthana-n-4621b632b"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            className="px-5 py-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-white/10 text-slate-300 hover:text-white hover:border-cyan-500/50 transition-all duration-300 shadow-lg flex items-center gap-2 text-xs font-semibold"
+          >
+            <LinkedinIcon className="w-4 h-4 text-blue-400" />
+            <span>LinkedIn Profile</span>
+          </a>
+
+          <a
+            href="https://github.com/keerthana-1807"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            className="px-5 py-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-white/10 text-slate-300 hover:text-white hover:border-indigo-500/50 transition-all duration-300 shadow-lg flex items-center gap-2 text-xs font-semibold"
+          >
+            <GithubIcon className="w-4 h-4 text-cyan-400" />
+            <span>GitHub Profile</span>
+          </a>
+        </motion.div>
+
         {/* Scroll Down Indicator */}
         <motion.a
           href="#about"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="mt-8 text-slate-500 hover:text-cyan-400 transition-colors flex flex-col items-center gap-2 group"
+          transition={{ delay: 0.7 }}
+          className="text-slate-500 hover:text-cyan-400 transition-colors flex flex-col items-center gap-2 group"
         >
           <span className="text-[11px] font-mono tracking-widest uppercase text-slate-400 group-hover:text-cyan-400">
             Scroll to explore
