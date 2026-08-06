@@ -1,51 +1,18 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Download, FileText, GraduationCap, Mail } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './Icons';
+import { X, Download, FileText } from 'lucide-react';
 
 export default function ResumeModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   const handleDownload = () => {
-    // Generate text content trigger for simulated download
-    const element = document.createElement('a');
-    const file = new Blob([
-      `KEERTHANA N - RESUME
-Pursuing B.E. Computer Science & Engineering (AI & ML)
-
-Email: keerthananagraj03@gmail.com
-GitHub: https://github.com/keerthana-1807
-LinkedIn: https://www.linkedin.com/in/keerthana-n-4621b632b
-
-EDUCATION:
-B.E. Computer Science & Engineering (AI & ML) (2022 - 2026)
-State Board Higher Secondary Certificate (2020 - 2022)
-
-TECHNICAL SKILLS:
-- AI & Machine Learning: Python, PyTorch, OpenCV, OCR, Scikit-learn, Deep Learning, NLP
-- Frontend & Web: HTML5, CSS3, React, Tailwind CSS, JavaScript
-- Databases & Tools: SQL, Git, GitHub, VS Code
-
-FEATURED PROJECTS:
-1. Placement AI Pro (Repo: https://github.com/keerthana-1807/placement-ai-pro)
-   - AI-powered placement preparation platform with personalized coding and interview feedback.
-2. KYC AI Agent (Repo: https://github.com/keerthana-1807/kycaiagent)
-   - Intelligent KYC automation system verifying user documents using OCR and computer vision.
-3. Personal Portfolio (https://github.com/keerthana-1807)
-   - Award-quality React + Three.js + Tailwind developer portfolio.
-
-CERTIFICATIONS:
-- IBM Enterprise AI Professional Certification
-- Google Data Analytics & Machine Learning Foundations
-- Microsoft Certified: Azure AI & Cloud Fundamentals
-      `
-    ], { type: 'text/plain' });
-
-    element.href = URL.createObjectURL(file);
-    element.download = 'Keerthana_N_Resume.txt';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
+    const link = document.createElement('a');
+    link.href = '/resume.pdf';
+    link.download = 'resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -96,133 +63,8 @@ CERTIFICATIONS:
           </div>
 
           {/* Resume Body */}
-          <div className="space-y-8 text-sm">
-            {/* Header Info */}
-            <div className="bg-slate-950/60 p-6 rounded-2xl border border-white/10">
-              <h1 className="text-2xl font-extrabold text-white mb-1">KEERTHANA N</h1>
-              <p className="text-indigo-300 font-medium mb-3">
-                B.E. Computer Science & Engineering (AI & ML)
-              </p>
-              <div className="flex flex-wrap gap-4 text-xs font-mono text-slate-300">
-                <a
-                  href="mailto:keerthananagraj03@gmail.com"
-                  className="hover:text-cyan-400 flex items-center gap-1.5"
-                >
-                  <Mail className="w-3.5 h-3.5 text-indigo-400" />
-                  <span>keerthananagraj03@gmail.com</span>
-                </a>
-                <a
-                  href="https://github.com/keerthana-1807"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-cyan-400 flex items-center gap-1.5"
-                >
-                  <GithubIcon className="w-3.5 h-3.5" />
-                  <span>github.com/keerthana-1807</span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/keerthana-n-4621b632b"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-cyan-400 flex items-center gap-1.5"
-                >
-                  <LinkedinIcon className="w-3.5 h-3.5 text-blue-400" />
-                  <span>linkedin.com/in/keerthana-n-4621b632b</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Profile Summary */}
-            <div>
-              <h3 className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-2 font-bold">
-                Professional Profile
-              </h3>
-              <p className="text-slate-300 leading-relaxed">
-                Computer Science Engineering student focused on Artificial Intelligence and Machine Learning. Passionate about computer vision, OCR, deep learning, Python development, and building scalable full-stack web applications.
-              </p>
-            </div>
-
-            {/* Education */}
-            <div>
-              <h3 className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-3 font-bold flex items-center gap-2">
-                <GraduationCap className="w-4 h-4" />
-                <span>Education</span>
-              </h3>
-              <div className="bg-slate-950/40 p-4 rounded-xl border border-white/5 space-y-2">
-                <div className="flex justify-between font-bold text-white">
-                  <span>B.E. Computer Science & Engineering (AI & ML)</span>
-                  <span className="text-xs font-mono text-indigo-400">2022 - 2026</span>
-                </div>
-                <p className="text-xs text-slate-400">Anna University Affiliated Engineering College</p>
-              </div>
-            </div>
-
-            {/* Skills */}
-            <div>
-              <h3 className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-3 font-bold">
-                Technical Skills
-              </h3>
-              <div className="grid grid-cols-2 gap-3 text-xs">
-                <div className="bg-slate-950/40 p-3 rounded-xl border border-white/5">
-                  <span className="font-bold text-white block mb-1">AI & Machine Learning</span>
-                  <span className="text-slate-300">Python, PyTorch, OpenCV, OCR, Scikit-learn</span>
-                </div>
-                <div className="bg-slate-950/40 p-3 rounded-xl border border-white/5">
-                  <span className="font-bold text-white block mb-1">Web Development</span>
-                  <span className="text-slate-300">HTML5, CSS3, React, Tailwind CSS, JavaScript</span>
-                </div>
-                <div className="bg-slate-950/40 p-3 rounded-xl border border-white/5">
-                  <span className="font-bold text-white block mb-1">Databases</span>
-                  <span className="text-slate-300">SQL, PostgreSQL, MySQL</span>
-                </div>
-                <div className="bg-slate-950/40 p-3 rounded-xl border border-white/5">
-                  <span className="font-bold text-white block mb-1">Developer Tools</span>
-                  <span className="text-slate-300">Git, GitHub, VS Code</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Projects */}
-            <div>
-              <h3 className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-3 font-bold">
-                Featured Projects
-              </h3>
-              <div className="space-y-3 text-xs">
-                <div className="bg-slate-950/40 p-4 rounded-xl border border-white/5">
-                  <div className="flex justify-between font-bold text-white mb-1">
-                    <span>Placement AI Pro</span>
-                    <a
-                      href="https://github.com/keerthana-1807/placement-ai-pro"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-cyan-400 hover:underline text-[11px]"
-                    >
-                      Repo Link ↗
-                    </a>
-                  </div>
-                  <p className="text-slate-300">
-                    An AI-powered placement preparation platform helping students practice aptitude, coding, and interview questions with personalized feedback.
-                  </p>
-                </div>
-
-                <div className="bg-slate-950/40 p-4 rounded-xl border border-white/5">
-                  <div className="flex justify-between font-bold text-white mb-1">
-                    <span>KYC AI Agent</span>
-                    <a
-                      href="https://github.com/keerthana-1807/kycaiagent"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-cyan-400 hover:underline text-[11px]"
-                    >
-                      Repo Link ↗
-                    </a>
-                  </div>
-                  <p className="text-slate-300">
-                    Intelligent KYC automation system verifying user documents using OCR and computer vision.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="w-full h-[80vh]">
+            <iframe src="/resume.pdf" className="w-full h-full" title="Resume PDF" />
           </div>
         </motion.div>
       </div>
