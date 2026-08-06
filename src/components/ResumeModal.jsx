@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Download, FileText, GraduationCap, Mail } from 'lucide-react';
 import { X, Download, FileText } from 'lucide-react';
 
 export default function ResumeModal({ isOpen, onClose }) {

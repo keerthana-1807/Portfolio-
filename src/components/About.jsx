@@ -11,20 +11,20 @@ const statsData = [
 
 const timelineData = [
   {
-    year: '2022 - 2026 (Present)',
-    title: 'B.E. Computer Science & Engineering (AI & ML)',
-    institution: 'Anna University Affiliated Engineering College',
-    description: 'Pursuing B.E. degree in Computer Science & Engineering (AI & ML), with focus on Artificial Intelligence, Machine Learning, Computer Vision, Natural Language Processing, Data Structures, and Software Engineering.',
+    year: 'Sep 2023 - Apr 2027 (Present)',
+    title: 'Bachelor of Engineering – Computer Science & Engineering (AI & ML)',
+    institution: 'Maharaja Institute of Technology, Mysore',
+    description: 'Pursuing B.E. degree in Computer Science & Engineering (AI & ML), focusing on Artificial Intelligence, Machine Learning, Deep Learning, Agentic AI, Natural Language Processing, and Data Science.',
     status: 'Currently Pursuing Degree',
-    highlights: ['First Class Distinction Track', 'AI & Machine Learning Focus', 'Active Open Source Developer'],
+    highlights: ['CGPA: 7.0', 'AI & Machine Learning Focus', 'Active Open Source Developer'],
   },
   {
-    year: '2020 - 2022',
-    title: 'Higher Secondary Certificate (HSC)',
-    institution: 'State Board of Higher Secondary Education',
-    description: 'Focused on Computer Science, Mathematics, Physics, and Chemistry with exceptional academic standing.',
-    status: 'Completed with Honors',
-    highlights: ['95%+ Marks in Computer Science & Mathematics', 'School Mathematics Olympiad Winner'],
+    year: 'Jun 2021 - Mar 2023',
+    title: 'Pre-University (Class XII)',
+    institution: 'Vasavi PU Composite College',
+    description: 'Completed Pre-University course with a focus on core science subjects (Physics, Chemistry, Mathematics, Computer Science).',
+    status: 'Completed: 70%',
+    highlights: ['70% Aggregate Marks', 'Focus on Science & Mathematics', 'Competitive Problem Solving'],
   },
 ];
 
@@ -123,7 +123,7 @@ export default function About() {
                 I am currently pursuing my <span className="text-white font-semibold">B.E. in Computer Science & Engineering (AI & ML)</span>. My academic and practical work centers on intelligent systems, predictive modeling, and building high-impact full-stack web applications.
               </p>
               <p>
-                Driven by innovation, I engineer real-world solutions such as <span className="text-cyan-300 font-medium">Placement AI Pro</span> for automated student interview prep and <span className="text-indigo-300 font-medium">KYC AI Agent</span> for automated document verification using OCR and Deep Learning.
+                Driven by innovation, I engineer real-world solutions such as <span className="text-cyan-300 font-medium">PlacementPilot AI</span> for automated placement preparation and <span className="text-indigo-300 font-medium">KYC Agent</span> for automated identity verification using OCR.
               </p>
               <p>
                 My objective is to leverage <span className="text-emerald-300 font-medium">AI & Machine Learning</span> to solve complex computational challenges, delivering scalable, recruiter-grade applications built on clean code principles.

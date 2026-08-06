@@ -11,34 +11,34 @@ const githubStats = [
 ];
 
 const topLanguages = [
-  { name: 'Java', percentage: 42, color: 'bg-amber-500' },
-  { name: 'Python', percentage: 32, color: 'bg-indigo-500' },
-  { name: 'JavaScript / React', percentage: 16, color: 'bg-yellow-400' },
-  { name: 'SQL & HTML/CSS', percentage: 10, color: 'bg-cyan-400' },
+  { name: 'Python', percentage: 52, color: 'bg-indigo-500' },
+  { name: 'JavaScript / React', percentage: 24, color: 'bg-yellow-400' },
+  { name: 'SQL & Database', percentage: 14, color: 'bg-cyan-400' },
+  { name: 'C & Java', percentage: 10, color: 'bg-amber-500' },
 ];
 
 const featuredRepos = [
   {
     name: 'placement-ai-pro',
-    description: 'An AI-powered placement preparation platform helping students practice aptitude, coding, and interview questions.',
+    description: 'PlacementPilot AI — an agentic placement preparation assistant that generates readiness reports using orchestrator agents.',
     url: 'https://github.com/keerthana-1807/placement-ai-pro',
-    language: 'JavaScript / React',
+    language: 'React / Node.js / AI',
     stars: 18,
     forks: 5,
   },
   {
     name: 'kycaiagent',
-    description: 'An intelligent AI-powered Know Your Customer (KYC) automation system verifying user documents using OCR and AI.',
+    description: 'KYC Agent — an agentic AI Know Your Customer compliance web platform verifying documents via OCR workflows.',
     url: 'https://github.com/keerthana-1807/kycaiagent',
-    language: 'Python / AI',
+    language: 'Python / FastAPI / AI',
     stars: 15,
     forks: 4,
   },
   {
-    name: 'keerthana-portfolio',
-    description: 'Award-quality developer portfolio built with React, Vite, Tailwind & Three.js.',
-    url: 'https://github.com/keerthana-1807',
-    language: 'JavaScript',
+    name: 'Portfolio-',
+    description: 'Highly interactive developer portfolio showcasing AI & full-stack applications with 3D starfields.',
+    url: 'https://github.com/keerthana-1807/Portfolio-',
+    language: 'JavaScript / React / Three.js',
     stars: 12,
     forks: 3,
   },
